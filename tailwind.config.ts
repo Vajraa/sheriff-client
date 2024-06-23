@@ -8,6 +8,12 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors:{
+        "quartz":"#4B4B4B",
+        "chinese-black":"#0B1215",
+        "smoky-black":"#0C0C0C",
+        "ghost-white":"#F9F9F9"
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
