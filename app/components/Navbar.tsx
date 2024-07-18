@@ -10,10 +10,18 @@ export default function Navbar() {
                     <a href="/blogs" className="hover:underline underline-offset-8">Blog</a>
                 </div>
             </div>
-            <button className="bg-smoky-black hover:opacity-70 transition-opacity border-ghost-white border flex justify-center items-center gap-3 px-8 py-3 rounded-md shadow-inner shadow-gray-500">
-                <span>Login with</span>
-                <Image src={github} width={18} height={18} alt="Github" />
-            </button>
+            {/* <button className="bg-smoky-black font-geist text-sm tracking-wide font-medium hover:opacity-70 transition-opacity border-[0.5px] flex justify-center items-center gap-3 px-6 py-3 rounded-md shadow-inner shadow-gray-500">
+                <span>Login using</span>
+                <Image src={github} width={20} height={20} alt="Github" />
+            </button> */}
+            <div className="px-8 py-5 bg-neutral-950 rounded-lg shadow-inner border border-sky-800 justify-center items-center gap-2.5 inline-flex">
+                <div className="text-white text-lg font-medium font-geist tracking-wide">
+                    Login using
+                </div>
+                <div>
+                    <Image src={github} width={20} height={20} alt="Github" />
+                </div>
+            </div>
         </nav>
     </>
 }

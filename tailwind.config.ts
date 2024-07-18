@@ -19,6 +19,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        geist: ['var(--font-geist)', 'sans-serif'],
+        aeonik: ['var(--font-aeonik)', 'sans-serif'],
+      },
     },
   },
   plugins: [],

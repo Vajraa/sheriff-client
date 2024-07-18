@@ -10,6 +10,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --font-geist: 'Geist', sans-serif;
+    --font-aeonik: 'Aeonik Pro', sans-serif;
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
     --background-end-rgb: 0, 0, 0;
@@ -18,12 +20,24 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+      rgb(var(--background-end-rgb))) rgb(var(--background-start-rgb));
+  font-family: var(--font-geist);
+}
+
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('/fonts/AeonikPro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Aeonik Pro';
+  src: url('/fonts/AeonikPro-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @layer utilities {
