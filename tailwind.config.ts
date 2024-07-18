@@ -12,7 +12,9 @@ const config: Config = {
         "quartz":"#4B4B4B",
         "chinese-black":"#0B1215",
         "smoky-black":"#0C0C0C",
-        "ghost-white":"#F9F9F9"
+        "ghost-white":"#F9F9F9",
+        'background-color': '#0B1215',
+        "button-color": '#0C0C0C'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
