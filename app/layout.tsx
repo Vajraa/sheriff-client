@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Navbar from "./Navbar";
+import Image from "next/image";
+import patch1 from './assets/patch-1.svg'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`${inter.className} pt-3`}>
+        <Image className="absolute left-0 top-0 cursor-none pointer-events-none " src={patch1} alt="glow" width={555} height={590} />
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
